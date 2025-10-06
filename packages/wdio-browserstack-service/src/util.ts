@@ -854,7 +854,7 @@ export function getCiInfo () {
         return {
             name: 'Azure CI',
             build_url: `${env.SYSTEM_TEAMFOUNDATIONSERVERURI}${env.SYSTEM_TEAMPROJECT}/_build/results?buildId=${env.BUILD_BUILDID}`,
-            job_name: env.BUILD_BUILDID,
+            job_name: env.SYSTEM_DEFINITIONID,
             build_number: env.BUILD_BUILDID
         }
     }
